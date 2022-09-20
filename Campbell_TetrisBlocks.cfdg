@@ -1,0 +1,132 @@
+startshape TETRIS
+
+shape TETRIS
+{
+	BLOCK_I [ hue 0 sat 1 b 1 ]
+    BLOCK_J [ hue 40 sat 1 b 1 ]
+    BLOCK_L [ hue 90 sat 1 b 1 ]
+    BLOCK_O [ hue 170 sat 1 b 1 ]
+    BLOCK_S [ hue 250 sat 1 b 1 ]
+    BLOCK_T [ hue 280 sat 1 b 1 ]
+    BLOCK_Z [ hue 300 sat 1 b 1 ]
+}
+
+shape BLOCK_I
+{
+	I [ x 0 ]
+}
+
+shape BLOCK_J
+{
+    J [ x 12 ]
+}
+
+shape BLOCK_L
+{
+    L [ x 24 ]
+}
+
+shape BLOCK_O
+{
+    O [ x 36 ]
+}
+
+shape BLOCK_S
+{
+    S [ x 48 ]
+}
+
+shape BLOCK_T
+{
+    T [ x 60 ]
+}
+
+shape BLOCK_Z
+{
+    Z [ x 72 ]
+}
+
+shape I
+{
+    SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+	SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+    SQUARE [ y 2 r -7 ]
+	SQUARE [ y 2 r 7 ]
+    SQUARE [ y 3 r -7 ]
+	SQUARE [ y 3 r 7 ]
+}
+
+shape J
+{
+    SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+	SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+    SQUARE [ y 2 r -7 ]
+	SQUARE [ y 2 r 7 ]
+    SQUARE [ x -1 r -7 ]
+	SQUARE [ x -1 r 7 ]
+}
+
+shape L
+{
+	SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+	SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+    SQUARE [ y 2 r -7 ]
+	SQUARE [ y 2 r 7 ]
+    SQUARE [ x 1 r -7 ]
+	SQUARE [ x 1 r 7 ]
+}
+
+shape O
+{
+	SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+    SQUARE [ x 1 r -7 ]
+	SQUARE [ x 1 r 7 ]
+    SQUARE [ x 1 y 1 r -7 ]
+	SQUARE [ x 1 y 1 r 7 ]
+    SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+}
+
+shape S
+{
+	SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+    SQUARE [ y 1 x -1 r -7 ]
+	SQUARE [ y 1 x -1 r 7 ]
+    SQUARE [ x -1 r -7 ]
+	SQUARE [ x -1 r 7 ]
+    SQUARE [ x -2 r -7 ]
+	SQUARE [ x -2 r 7 ]
+}
+
+shape T
+{
+	SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1  r 7 ]
+    SQUARE [ y 1  x 1 r -7 ]
+	SQUARE [ y 1  x 1 r 7 ]
+    SQUARE [ y 1  x -1 r -7 ]
+	SQUARE [ y 1  x -1 r 7 ]
+    SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+}
+
+shape Z
+{
+    SQUARE [ y 1 r -7 ]
+	SQUARE [ y 1 r 7 ]
+    SQUARE [ y 1 x -1 r -7 ]
+	SQUARE [ y 1 x -1 r 7 ]
+    SQUARE [ r -7 ]
+	SQUARE [ r 7 ]
+    SQUARE [ x 1 r -7 ]
+	SQUARE [ x 1 r 7 ]
+    
+}

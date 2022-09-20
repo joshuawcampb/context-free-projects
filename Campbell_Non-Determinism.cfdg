@@ -1,0 +1,79 @@
+startshape Drawing
+
+path spiral {
+    
+    MOVETO( 0, 0 )
+    
+    LINETO(1, 0)
+    STROKE [hue 0 sat 1 b 1]
+    
+    LINETO(1, 2)
+    STROKE [hue 50 sat 1 b 1]
+    
+    LINETO(-2, 2)
+    STROKE [hue 100 sat 1 b 1]
+    
+    LINETO(-2, -2)
+    STROKE [hue 190 sat 1 b 1]
+    
+    LINETO(3, -2)
+    STROKE [hue 240 sat 1 b 1]
+    
+    LINETO(3, 4)
+    STROKE [hue 270 sat 1 b 1]
+    
+    LINETO(-4, 4)
+    STROKE [hue 300 sat 1 b 1]
+    
+}
+
+path handdrawnstar {
+    
+    MOVETO( -2, -2 )
+    
+    LINETO(2, 8) 
+    STROKE [hue 0 sat 1 b 1]
+    
+    LINETO(6, -4)
+    STROKE [hue 50 sat 1 b 1]
+    
+     LINETO(-3, 8)
+    STROKE [hue 150 sat 1 b 1]
+    
+     LINETO(10, 2)
+    STROKE [hue 250 sat 1 b 1]
+    
+     LINETO(-2, -2)
+    STROKE [hue 300 sat 1 b 1]
+}
+
+path spiralOfFibonacci {
+    
+    MOVETO( 0, 0 )
+    
+    LINETO(1, 1)
+     STROKE [hue 0 sat 1 b 1]
+     
+     LINETO(-1, 2)
+     STROKE [hue 50 sat 1 b 1]
+     
+     LINETO(-3, -1)
+     STROKE [hue 100 sat 1 b 1]
+     
+     LINETO(2, -4)
+     STROKE [hue 180 sat 1 b 1]
+     
+     LINETO(7, 4)
+     STROKE [hue 250 sat 1 b 1]
+     
+     LINETO(-6, 12)
+     STROKE [hue 300 sat 1 b 1]
+     
+}
+
+shape Drawing 
+    
+    rule 3.4 { spiral[] }
+    rule 3.3 { handdrawnstar[] }
+    rule 3.3 { spiralOfFibonacci[] }
+    
